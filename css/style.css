@@ -1,0 +1,109 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.5);
+  background: linear-gradient(100deg, #8e2de2 10%, #4a00e0 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.header {
+  padding-top: 40px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.section {
+  padding-top: 382px;
+}
+.section__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section__input {
+  background: none;
+  outline: none;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 36px;
+  text-align: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.75);
+  padding-bottom: 8px;
+  margin-bottom: 36px;
+}
+.section__input::-moz-placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.section__input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.section__find {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #4c01e0;
+  line-height: 36px;
+  width: 140px;
+  height: 48px;
+  border-radius: 8px;
+  background: #fff;
+}
+.section__temp {
+  font-family: "Inter", sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.section__weather {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 36px;
+  margin-bottom: 36px;
+}
+.section__change {
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 28px;
+  text-decoration-line: underline;
+}/*# sourceMappingURL=style.css.map */

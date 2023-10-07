@@ -1,0 +1,48 @@
+.section {
+  padding-top: 382px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__input {
+    background: none;
+    outline: none;
+    border: none;
+    @include main-font(28px, 400, rgba(255, 255, 255, 0.7));
+    line-height: 36px;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.75);
+    padding-bottom: 8px;
+    margin-bottom: 36px;
+    &::placeholder {
+      @include main-font(28px, 400, rgba(255, 255, 255, 0.7));
+    }
+  }
+
+  &__find {
+    @include main-font(20px, 400, #4c01e0);
+    line-height: 36px;
+    width: 140px;
+    height: 48px;
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  &__temp {
+    @include main-font(72px, 700, #ffffff);
+    margin-bottom: 40px;
+  }
+  &__weather {
+    @include main-font(40px, 400, rgba(255, 255, 255, 0.8));
+    line-height: 36px;
+    margin-bottom: 36px;
+  }
+
+  &__change {
+    @include main-font(17px, 300, rgba(255, 255, 255, 0.5));
+    line-height: 28px;
+    text-decoration-line: underline;
+  }
+}

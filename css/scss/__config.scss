@@ -1,0 +1,27 @@
+@mixin main-font($size, $weight, $color) {
+  font-family: "Inter", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: 36px;
+  color: $color;
+}
+body {
+  @include main-font(28px, 300, rgba(255, 255, 255, 0.5));
+
+  background: linear-gradient(100deg, #8e2de2 10%, #4a00e0 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  outline: none;
+  border: none;
+}
