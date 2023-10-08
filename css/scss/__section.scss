@@ -45,4 +45,20 @@
     line-height: 28px;
     text-decoration-line: underline;
   }
+
+  &__error {
+    @include main-font(20px, 400, #ffffff);
+  }
+
+  &__info {
+    @include main-font(12px, 400, rgba(255, 255, 255, 0.75));
+    text-align: center;
+  }
+
+  &__try {
+    @include main-font(20px, 400, #4c01e0);
+    background: white;
+    padding: 6px 26px 6px 26px;
+    border-radius: 8px;
+  }
 }

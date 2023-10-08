@@ -106,4 +106,29 @@ main {
   color: rgba(255, 255, 255, 0.5);
   line-height: 28px;
   text-decoration-line: underline;
+}
+.section__error {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #ffffff;
+}
+.section__info {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+}
+.section__try {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #4c01e0;
+  background: white;
+  padding: 6px 26px 6px 26px;
+  border-radius: 8px;
 }/*# sourceMappingURL=style.css.map */
