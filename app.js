@@ -45,7 +45,7 @@ function FindFunc() {
   find.addEventListener("click", async () => {
     sectionWrapper.innerHTML = "";
     const inputVal = input.value;
-    const FIND_URL = `http://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=886705b4c1182eb1c69f28eb8c520e20`;
+    const FIND_URL = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=886705b4c1182eb1c69f28eb8c520e20`;
     const findRes = await getData(FIND_URL);
     city = findRes.name;
     temp = Math.round(findRes.main.temp - 275.15);
