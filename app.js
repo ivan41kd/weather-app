@@ -62,7 +62,7 @@ const successCallback = async (position) => {
   const API_URL = `https://api.openweathermap.org/data/2.5/onecall?lat=${latidude}&lon=${longitude}&appid=daa20148447c985b3ad4df821393b1bf`;
   const result = await getData(API_URL);
   const temp = Math.round(result.current.temp - 275.15);
-  const weather = result.alerts[0].event;
+  const weather = result.current.weather[0].main;
   if (temp !== lastTemp || result.timezone !== lastTimezone) {
     lastTemp = temp;
     lastTimezone = result.timezone;
@@ -87,13 +87,13 @@ const errorCallback = async () => {
   const API_URL = `https://api.openweathermap.org/data/2.5/onecall?lat=${latidude}&lon=${longitude}&appid=daa20148447c985b3ad4df821393b1bf`;
   const result = await getData(API_URL);
   let temp = Math.round(result.current.temp - 275.15);
-  let weather = result.alerts[0].event;
+  let weather = result.current.weather[0].main;
   lastTemp = temp;
   lastTimezone = result.timezone;
   lastWeather = weather;
   sectionWrapper.innerHTML = `           <p class="section__temp">${lastTemp}°C</p>
-          <p class="section__weather">${lastWeather} в ${city}</p>
-          <p class="section__change">Change city</p> `;
+  <p class="section__weather">${lastWeather} в ${city}</p>
+  <p class="section__change">Change city</p> `;
   change = sectionWrapper.querySelector(".section__change");
   change.addEventListener("click", () => {
     FindFunc();
